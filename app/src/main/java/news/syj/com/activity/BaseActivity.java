@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.umeng.analytics.MobclickAgent;
 
+import news.syj.com.R;
 import news.syj.com.utils.MyLog;
 import news.syj.com.utils.UmengManager;
 
@@ -24,6 +24,7 @@ public abstract class BaseActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MyLog.d(TAG,"BaseActivityonCreate");
         setContentView(getLayoutId());
         findView();
         initView();
@@ -31,11 +32,11 @@ public abstract class BaseActivity extends AppCompatActivity{
         initData();
     }
 
-    abstract int getLayoutId();
-    abstract void findView();
-    abstract void initView();
-    abstract void setOnClick();
-    abstract void initData();
+    protected abstract int getLayoutId();
+    protected abstract void findView();
+    protected abstract void initView();
+    protected abstract void setOnClick();
+    protected abstract void initData();
 
 
     @Override
@@ -79,10 +80,18 @@ public abstract class BaseActivity extends AppCompatActivity{
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);
+        overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
+    }
+
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode) {
+        super.startActivityForResult(intent, requestCode);
+        overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
     }
 
     @Override
     public void finish() {
         super.finish();
+        overridePendingTransition(R.anim.push_left_in,R.anim.push_left_out);
     }
 }

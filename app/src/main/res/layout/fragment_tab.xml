@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/title_bg_color"
+    >
+    <ImageView
+        android:id="@+id/img_fragment_tab_home"
+        android:src="@mipmap/ic_fragment_home"
+        android:scaleType="centerInside"
+        android:background="@drawable/fragment_tab_bg"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/img_fragment_tab_find"
+        android:src="@mipmap/ic_fragment_find"
+        android:scaleType="centerInside"
+        android:background="@drawable/fragment_tab_bg"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/img_fragment_tab_store"
+        android:src="@mipmap/ic_fragment_store"
+        android:scaleType="centerInside"
+        android:background="@drawable/fragment_tab_bg"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/img_fragment_tab_personal"
+        android:src="@mipmap/ic_fragment_personal"
+        android:scaleType="centerInside"
+        android:background="@drawable/fragment_tab_bg"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -2,4 +2,9 @@
     <string name="app_name">MyNewsApplication</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="personal_center_title">个人中心</string>
+    <string name="home_title">首页</string>
+    <string name="find_title">首页</string>
+    <string name="store_title">首页</string>
 </resources>

@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="title_bg_color">#FF6666</color>
+    <color name="title_textcolor">#FFFFFF</color>
+
+
+    <color name="fragment_check_true">#DA4C45</color>
 </resources>
