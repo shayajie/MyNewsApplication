@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 
 import news.syj.com.R;
 import news.syj.com.utils.MyLog;
+import news.syj.com.utils.StatusBarCompat;
 
 /**
  * Created by shayajie on 2016/7/12.
@@ -22,6 +23,8 @@ public class StartActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         final View startview = View.inflate(this,R.layout.activity_start,null);
         setContentView(startview);
+//        StatusBarCompat.compat(this,android.R.color.white);
+
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.3f,1.0f);
         alphaAnimation.setDuration(2000);
         startview.setAnimation(alphaAnimation);

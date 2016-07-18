@@ -10,4 +10,8 @@
 
 
     <color name="fragment_check_true">#DA4C45</color>
+
+    <color name="my_statusbar_color">#FF6666</color>
+
+
 </resources>
